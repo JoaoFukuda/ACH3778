@@ -1,6 +1,8 @@
 # Filtrando os arquivos
 
-Passos tomados para filtrar e obter os arquivos:
+Passos tomados para filtrar e obter os arquivos.
+
+Os nomes dos subtópicos esta no formato `<nome_do_arquivo> [<numero_de_resultados>]`.
 
 ## `result.json` [54465]
 
