@@ -36,11 +36,19 @@ Filtrados dos arquivos `gov_links.txt` e `links.txt` utilizando o `ag`.
 ag '\bapi\b'
 ```
 
-E depois podemos fazer uma requisição para todos esses links e ver quais ainda estão ativos (mas não fizemos ainda).
+Depois fizemos uma requisição para todos os links em `api_links.txt` e vimos quais ainda estão respondendo utilizando esse script abaixo. Salvamos o resultado em `funcionando_api_links.txt`.
 
 ```sh
 for LINK in $(cat gov_links.txt)
 do
 	curl -s $LINK >/dev/null && echo $LINK
 done
+```
+
+## `frequencia_links.txt` [2900]
+
+Lista da frequência com que sites aparecem no histórico do chat.
+
+```sh
+sed -E 's!^(.*:\/\/)?([^/]*)(/.*)?$!\2!' < links.txt | sort | uniq -c | sort -n
 ```
