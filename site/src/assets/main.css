@@ -1,0 +1,51 @@
+body {
+	margin-top: 1.5em;
+	margin-left: 6em;
+	margin-right: 6em;
+
+	font-family: "Open Sans", sans-serif;
+}
+
+#api_header {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+#api_header a {
+	padding-left: 1em;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+nav > ul > li {
+	display: inline;
+	margin: 2em;
+}
+
+ul#categories {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+ul#categories > li {
+	display: inline;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+}
+
+footer {
+	font-size: small;
+	position: absolute;
+	bottom: 0;
+}
+
+form#edit_api > input[type=text], form#propose_citation > input[type=text] {
+	width: 52em;
+}
