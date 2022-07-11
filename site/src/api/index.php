@@ -27,6 +27,11 @@
 					<p><a href="<?php echo $api["url"]; ?>" target="_blank">link externo</a></p>
 				</div>
 
+				<p id="last_update">Ultima edição: <?php
+					$time = strtotime($api["last_update"]);
+					echo date('D, d M Y', $time);
+				?></p>
+
 				<?php if (!empty($api["main_operations"])) { ?>
 					<hr>
 					<div>

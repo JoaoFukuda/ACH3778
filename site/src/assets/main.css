@@ -16,6 +16,11 @@ body {
 	padding-left: 1em;
 }
 
+#last_update {
+	font-size: small;
+	margin-top: 0;
+}
+
 nav {
 	display: flex;
 	flex-direction: row;
